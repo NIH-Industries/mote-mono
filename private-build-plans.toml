@@ -5,14 +5,14 @@
 
 [buildPlans.MoteMono]
 family = "Mote Mono"
-spacing = "normal"     # normal | term | fontconfig-mono | fixed (no ligatures)
+spacing = "term"       # normal | term | fontconfig-mono | fixed (no ligatures)
 serifs = "sans"        # sans | slab
 noCvSs = true          # bake the choices below in rather than exposing cv##/ss## features
 exportGlyphNames = false
 
 # Name table: OFL needs Iosevka's copyright kept alongside ours.
 [buildPlans.MoteMono.namingOverride]
-version = "0.1.0"
+version = "0.1.1"
 copyright = "Copyright (c) 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typeof.net). Copyright (c) 2026, Mark Ryall (Mote Mono modifications)."
 manufacturer = "Mark Ryall"
 designer = "Mark Ryall, after Iosevka by Belleve Invis"
