@@ -12,11 +12,11 @@ to Bold weights, ligatures, box drawing, powerline glyphs and Iosevka's full sym
 On macOS with Homebrew:
 
 ```sh
-brew trust markryall/tap
-brew install --cask markryall/tap/font-mote-mono
+brew trust nih-industries/tap
+brew install --cask nih-industries/tap/font-mote-mono
 ```
 
-Or download the zip from the [latest release](https://github.com/markryall/mote-mono/releases/latest)
+Or download the zip from the [latest release](https://github.com/NIH-Industries/mote-mono/releases/latest)
 and unzip it. Then:
 
 - **macOS**: double-click each `.ttf` and choose Install, or copy them into `~/Library/Fonts`.

@@ -3,7 +3,7 @@
 #   ./build.sh            build unhinted TTFs into tmp/iosevka/dist/MoteMono
 #   ./build.sh --install  ...and copy them into ~/Library/Fonts
 #   ./build.sh --release  ...and publish them as a GitHub release, tagged with the plan's version,
-#                         then point the font-mote-mono cask in markryall/homebrew-tap at it
+#                         then point the font-mote-mono cask in NIH-Industries/homebrew-tap at it
 set -euo pipefail
 
 install=false release=false
@@ -74,7 +74,7 @@ if $release; then
   zip="$root/tmp/$plan-$version.zip"
   rm -f "$zip"
   zip -j "$zip" "$out"/*.ttf "$root/LICENSE.md"
-  gh release create "$tag" "$zip" --repo markryall/mote-mono --target "$commit" \
+  gh release create "$tag" "$zip" --repo NIH-Industries/mote-mono --target "$commit" \
     --title "Mote Mono $version" \
     --notes "Mote Mono $version: Light, Regular, Medium and Bold, each with an italic. Unzip and install the .ttf files; see the README for details."
 
@@ -85,7 +85,7 @@ if $release; then
     jj -R "$tap" git fetch
     jj -R "$tap" new main@origin
   else
-    jj git clone git@github.com:markryall/homebrew-tap.git "$tap"
+    jj git clone git@github.com:NIH-Industries/homebrew-tap.git "$tap"
   fi
   sha="$(shasum -a 256 "$zip" | cut -d' ' -f1)"
   sed -i '' -e "s/^  version \".*\"/  version \"$version\"/" -e "s/^  sha256 \".*\"/  sha256 \"$sha\"/" "$cask"

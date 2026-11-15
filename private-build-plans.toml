@@ -17,8 +17,8 @@ copyright = "Copyright (c) 2015-2026, Renzhi Li (aka. Belleve Invis, belleve@typ
 manufacturer = "Mark Ryall"
 designer = "Mark Ryall, after Iosevka by Belleve Invis"
 description = "Monospace coding font: Iosevka rebuilt with proportions inspired by Spot Mono and soft stroke ends."
-urlVendor = "https://github.com/markryall/mote-mono"
-urlDesigner = "https://github.com/markryall/mote-mono"
+urlVendor = "https://github.com/NIH-Industries/mote-mono"
+urlDesigner = "https://github.com/NIH-Industries/mote-mono"
 license = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org/"
 licenseURL = "https://openfontlicense.org/"
 
